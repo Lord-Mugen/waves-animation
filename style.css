@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1d1e2c;
+}
+
+.wave{
+    height: 306px;
+    width: 306px;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotate(60deg);
+}
+
+.wave span{
+    position: absolute;
+    display: block;
+    border: 3px solid #00002A;
+    border-radius: 50%;
+    box-shadow: 0 5px 0 #014d1a;
+    animation: animate 3s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%,100%{
+        trasnform:trasnlateZ(-100px);
+    }
+    50%{
+        trasnform: trasnlateZ(100px);
+    }
+}
+
+.wave span:nth-child(1), .wave span:nth-child(5),
+    .wave span:nth-child(9), .wave span:nth-child(13) {
+    border-color: #f8f2ff;
+    box-shadow: 0 5px #c5c2c9;
+}
+
+.wave span:nth-child(2), .wave span:nth-child(6),
+    .wave span:nth-child(9), .wave span:nth-child(13) {
+    border-color: #f8f2ff;
+    box-shadow: 0 5px #c5c2c9;
+}
+
+.wave span:nth-child(1), .wave span:nth-child(5),
+    .wave span:nth-child(9), .wave span:nth-child(13) {
+    border-color: #f8f2ff;
+    box-shadow: 0 5px #c5c2c9;
+}
+
+.wave span:nth-child(1), .wave span:nth-child(5),
+    .wave span:nth-child(9), .wave span:nth-child(13) {
+    border-color: #f8f2ff;
+    box-shadow: 0 5px #c5c2c9;
+}
